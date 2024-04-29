@@ -1,0 +1,19 @@
+    <nav class="navbar">
+      <a href="/" class="logo"><img src="https://media.discordapp.net/attachments/1207287675841810453/1234455760256106516/logo.png?ex=6630cc04&is=662f7a84&hm=6640ad55a6d532a4f29b07d03417c6c77b44899cbc3b872f983f19800db63d98&=&format=webp&quality=lossless&width=281&height=281" width="45" height="45"></a>
+      <input type="checkbox" id="toggler">
+      <label for="toggler"><i style="font-size: 20px; color: var(--font-color);" class="fa-solid fa-bars"></i></label>
+      <div class="menu">
+        <ul class="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/uptime">Uptime</a></li>
+          <li><a href="https://instagram.com/ttvleeroym">Instagram</a></li>
+		  <% if(user) { %>
+		  <li><a href="/dashboard">Dashboard</a></li>
+		  <% } else { %>
+		  <li><a href="/login">Login</a></li>
+		  <% } %>
+		  </ul>
+      </div>
+    </nav>
+
+<script src="script.js"></script>
